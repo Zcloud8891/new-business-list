@@ -1,0 +1,1979 @@
+{
+ "month": "2026-10",
+ "built": "2026-11-10",
+ "first_date": "2026-10-01",
+ "last_date": "2026-10-30",
+ "towing_removed_statewide": 12,
+ "oregon": {
+  "total": 8226,
+  "or_address": 7067,
+  "out_of_state": 1159,
+  "cities": [
+   [
+    "Portland",
+    1996
+   ],
+   [
+    "Bend",
+    355
+   ],
+   [
+    "Salem",
+    321
+   ],
+   [
+    "Eugene",
+    275
+   ],
+   [
+    "Beaverton",
+    254
+   ],
+   [
+    "Hillsboro",
+    211
+   ],
+   [
+    "Medford",
+    163
+   ],
+   [
+    "Lake Oswego",
+    140
+   ],
+   [
+    "Gresham",
+    129
+   ],
+   [
+    "Oregon City",
+    111
+   ],
+   [
+    "Redmond",
+    102
+   ],
+   [
+    "Grants Pass",
+    100
+   ],
+   [
+    "Springfield",
+    83
+   ],
+   [
+    "Albany",
+    83
+   ],
+   [
+    "Tigard",
+    79
+   ],
+   [
+    "Roseburg",
+    76
+   ],
+   [
+    "Corvallis",
+    74
+   ],
+   [
+    "Milwaukie",
+    68
+   ],
+   [
+    "Klamath Falls",
+    58
+   ],
+   [
+    "Happy Valley",
+    56
+   ],
+   [
+    "Ashland",
+    55
+   ],
+   [
+    "Newberg",
+    51
+   ],
+   [
+    "Prineville",
+    48
+   ],
+   [
+    "West Linn",
+    48
+   ],
+   [
+    "Mcminnville",
+    47
+   ]
+  ],
+  "cats": [
+   [
+    "Other / unclear",
+    4214
+   ],
+   [
+    "Consulting & professional",
+    1005
+   ],
+   [
+    "Real estate & property",
+    514
+   ],
+   [
+    "Tech & media",
+    439
+   ],
+   [
+    "Construction & trades",
+    404
+   ],
+   [
+    "Health care",
+    314
+   ],
+   [
+    "Nonprofit, church & community",
+    303
+   ],
+   [
+    "Home & yard services",
+    240
+   ],
+   [
+    "Retail & goods",
+    223
+   ],
+   [
+    "Auto & transport",
+    199
+   ],
+   [
+    "Beauty & wellness",
+    165
+   ],
+   [
+    "Food & drink",
+    152
+   ],
+   [
+    "Education & childcare",
+    54
+   ]
+  ],
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    4909
+   ],
+   [
+    "Assumed Business Name",
+    1831
+   ],
+   [
+    "Foreign Limited Liability Company",
+    625
+   ],
+   [
+    "Foreign Business Corporation",
+    386
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    246
+   ],
+   [
+    "Domestic Business Corporation",
+    164
+   ],
+   [
+    "Foreign Nonprofit Corporation",
+    28
+   ],
+   [
+    "Domestic Professional Corporation",
+    13
+   ]
+  ],
+  "sample": [
+   {
+    "name": "SUNSET RANCH SUN LIFE, LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Lake Oswego",
+    "state": "OR",
+    "cat": "Retail & goods",
+    "owner": "B. K.",
+    "has_street": true
+   },
+   {
+    "name": "THE JEA EFFECT NAIL BOUTIQUE LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Hillsboro",
+    "state": "OR",
+    "cat": "Beauty & wellness",
+    "owner": "J. C. M.",
+    "has_street": true
+   },
+   {
+    "name": "TRUE COAT PAINTING & SIDING",
+    "type": "Assumed Business Name",
+    "date": "2026-10-30",
+    "city": "Brookings",
+    "state": "OR",
+    "cat": "Construction & trades",
+    "owner": "B. A. C.",
+    "has_street": true
+   },
+   {
+    "name": "VIKING COURIER LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Colton",
+    "state": "OR",
+    "cat": "Auto & transport",
+    "owner": "B. H.",
+    "has_street": true
+   },
+   {
+    "name": "VISIONARY LIFESPAN PRIMARY CARE",
+    "type": "Assumed Business Name",
+    "date": "2026-10-30",
+    "city": "Hillsboro",
+    "state": "OR",
+    "cat": "Health care",
+    "owner": "Z. M. G.",
+    "has_street": true
+   },
+   {
+    "name": "WILDSCAPES LANDSCAPE AND DESIGN",
+    "type": "Assumed Business Name",
+    "date": "2026-10-30",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Home & yard services",
+    "owner": "A. R. M.",
+    "has_street": true
+   },
+   {
+    "name": "WILLOW GENTLE BENDING INCORPORATED",
+    "type": "Domestic Nonprofit Corporation",
+    "date": "2026-10-30",
+    "city": "Redmond",
+    "state": "OR",
+    "cat": "Nonprofit, church & community",
+    "owner": "L. J.",
+    "has_street": true
+   },
+   {
+    "name": "WINDBREAK PROPERTIES LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Coos Bay",
+    "state": "OR",
+    "cat": "Real estate & property",
+    "owner": "A. J. R.",
+    "has_street": true
+   },
+   {
+    "name": "WYKES DESIGN LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Bend",
+    "state": "OR",
+    "cat": "Tech & media",
+    "owner": "R. W.",
+    "has_street": true
+   },
+   {
+    "name": "X-TECH GROUP INC",
+    "type": "Domestic Business Corporation",
+    "date": "2026-10-30",
+    "city": "Portland",
+    "state": "OR",
+    "cat": "Consulting & professional",
+    "owner": "K. T.",
+    "has_street": true
+   }
+  ]
+ },
+ "lane": {
+  "total": 471,
+  "cities": [
+   [
+    "Eugene",
+    275
+   ],
+   [
+    "Springfield",
+    83
+   ],
+   [
+    "Cottage Grove",
+    22
+   ],
+   [
+    "Florence",
+    22
+   ],
+   [
+    "Junction City",
+    14
+   ],
+   [
+    "Creswell",
+    11
+   ],
+   [
+    "Veneta",
+    11
+   ],
+   [
+    "Oakridge",
+    4
+   ],
+   [
+    "Cheshire",
+    4
+   ],
+   [
+    "Lowell",
+    4
+   ],
+   [
+    "Elmira",
+    3
+   ],
+   [
+    "Dexter",
+    3
+   ],
+   [
+    "Mckenzie Bridge",
+    2
+   ],
+   [
+    "Deadwood",
+    2
+   ],
+   [
+    "Westfir",
+    2
+   ],
+   [
+    "Coburg",
+    2
+   ],
+   [
+    "Walton",
+    1
+   ],
+   [
+    "Swisshome",
+    1
+   ],
+   [
+    "Pleasant Hill",
+    1
+   ],
+   [
+    "Blachly",
+    1
+   ],
+   [
+    "Vida",
+    1
+   ],
+   [
+    "Marcola",
+    1
+   ],
+   [
+    "Lorane",
+    1
+   ]
+  ],
+  "cats": [
+   [
+    "Other / unclear",
+    237
+   ],
+   [
+    "Consulting & professional",
+    44
+   ],
+   [
+    "Real estate & property",
+    37
+   ],
+   [
+    "Construction & trades",
+    26
+   ],
+   [
+    "Retail & goods",
+    21
+   ],
+   [
+    "Health care",
+    17
+   ],
+   [
+    "Tech & media",
+    17
+   ],
+   [
+    "Food & drink",
+    17
+   ],
+   [
+    "Home & yard services",
+    16
+   ],
+   [
+    "Nonprofit, church & community",
+    14
+   ],
+   [
+    "Beauty & wellness",
+    14
+   ],
+   [
+    "Auto & transport",
+    8
+   ],
+   [
+    "Education & childcare",
+    3
+   ]
+  ],
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    328
+   ],
+   [
+    "Assumed Business Name",
+    118
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    15
+   ],
+   [
+    "Domestic Business Corporation",
+    6
+   ],
+   [
+    "Foreign Business Corporation",
+    2
+   ],
+   [
+    "Foreign Nonprofit Corporation",
+    1
+   ],
+   [
+    "Foreign Limited Liability Company",
+    1
+   ]
+  ],
+  "with_people": 469,
+  "principal": 458,
+  "sample": [
+   {
+    "name": "REALITY KITCHEN'S GENERAL STORE LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-28",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Food & drink",
+    "owner": "J. E.",
+    "has_street": true
+   },
+   {
+    "name": "MADISON HAUS RENTAL",
+    "type": "Assumed Business Name",
+    "date": "2026-10-29",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Real estate & property",
+    "owner": "S. G. Y.",
+    "has_street": true
+   },
+   {
+    "name": "MORE FLOWERS, PLEASE!",
+    "type": "Assumed Business Name",
+    "date": "2026-10-29",
+    "city": "Dexter",
+    "state": "OR",
+    "cat": "Retail & goods",
+    "owner": "G. S.",
+    "has_street": true
+   },
+   {
+    "name": "THE KINDRED PROJECT",
+    "type": "Domestic Nonprofit Corporation",
+    "date": "2026-10-29",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Nonprofit, church & community",
+    "owner": "A. M.",
+    "has_street": true
+   },
+   {
+    "name": "INFLUENTS CENTER FOR MENTAL HEALTH SERVICES AND RESEARCH, LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Springfield",
+    "state": "OR",
+    "cat": "Health care",
+    "owner": "K. Z.",
+    "has_street": true
+   },
+   {
+    "name": "STONE PATH CONSTRUCTION LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Construction & trades",
+    "owner": "K. F. M.",
+    "has_street": true
+   },
+   {
+    "name": "SUMMIT GROUP VENTURES LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Consulting & professional",
+    "owner": "G. W.",
+    "has_street": true
+   },
+   {
+    "name": "TIRE CHAIN TOOL",
+    "type": "Assumed Business Name",
+    "date": "2026-10-30",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Auto & transport",
+    "owner": "B. C.",
+    "has_street": true
+   },
+   {
+    "name": "UNIVERSAL DETECTIVE MEDIA LLC",
+    "type": "Domestic Limited Liability Company",
+    "date": "2026-10-30",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Tech & media",
+    "owner": "S. J. C.",
+    "has_street": true
+   },
+   {
+    "name": "WILDSCAPES LANDSCAPE AND DESIGN",
+    "type": "Assumed Business Name",
+    "date": "2026-10-30",
+    "city": "Eugene",
+    "state": "OR",
+    "cat": "Home & yard services",
+    "owner": "A. R. M.",
+    "has_street": true
+   }
+  ]
+ },
+ "city": {
+  "Eugene": {
+   "total": 275,
+   "cats": [
+    [
+     "Other / unclear",
+     133
+    ],
+    [
+     "Consulting & professional",
+     26
+    ],
+    [
+     "Real estate & property",
+     23
+    ],
+    [
+     "Tech & media",
+     14
+    ],
+    [
+     "Health care",
+     13
+    ],
+    [
+     "Construction & trades",
+     11
+    ],
+    [
+     "Food & drink",
+     11
+    ],
+    [
+     "Retail & goods",
+     10
+    ],
+    [
+     "Home & yard services",
+     10
+    ],
+    [
+     "Beauty & wellness",
+     9
+    ],
+    [
+     "Nonprofit, church & community",
+     9
+    ],
+    [
+     "Auto & transport",
+     5
+    ],
+    [
+     "Education & childcare",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     194
+    ],
+    [
+     "Assumed Business Name",
+     62
+    ],
+    [
+     "Domestic Nonprofit Corporation",
+     11
+    ],
+    [
+     "Domestic Business Corporation",
+     6
+    ],
+    [
+     "Foreign Business Corporation",
+     1
+    ],
+    [
+     "Foreign Limited Liability Company",
+     1
+    ]
+   ],
+   "sample": [
+    {
+     "name": "REALITY KITCHEN'S GENERAL STORE LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-28",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Food & drink",
+     "owner": "J. E.",
+     "has_street": true
+    },
+    {
+     "name": "HERNE'S HOLLOW GIFTS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "S. L.",
+     "has_street": true
+    },
+    {
+     "name": "LEE ALFARO DENTAL, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Health care",
+     "owner": "A. L.",
+     "has_street": true
+    },
+    {
+     "name": "MADISON HAUS RENTAL",
+     "type": "Assumed Business Name",
+     "date": "2026-10-29",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "S. G. Y.",
+     "has_street": true
+    },
+    {
+     "name": "THE KINDRED PROJECT",
+     "type": "Domestic Nonprofit Corporation",
+     "date": "2026-10-29",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Nonprofit, church & community",
+     "owner": "A. M.",
+     "has_street": true
+    },
+    {
+     "name": "STONE PATH CONSTRUCTION LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "K. F. M.",
+     "has_street": true
+    },
+    {
+     "name": "SUMMIT GROUP VENTURES LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "G. W.",
+     "has_street": true
+    },
+    {
+     "name": "TIRE CHAIN TOOL",
+     "type": "Assumed Business Name",
+     "date": "2026-10-30",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Auto & transport",
+     "owner": "B. C.",
+     "has_street": true
+    },
+    {
+     "name": "UNIVERSAL DETECTIVE MEDIA LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Tech & media",
+     "owner": "S. J. C.",
+     "has_street": true
+    },
+    {
+     "name": "WILDSCAPES LANDSCAPE AND DESIGN",
+     "type": "Assumed Business Name",
+     "date": "2026-10-30",
+     "city": "Eugene",
+     "state": "OR",
+     "cat": "Home & yard services",
+     "owner": "A. R. M.",
+     "has_street": true
+    }
+   ]
+  },
+  "Springfield": {
+   "total": 83,
+   "cats": [
+    [
+     "Other / unclear",
+     48
+    ],
+    [
+     "Real estate & property",
+     6
+    ],
+    [
+     "Consulting & professional",
+     6
+    ],
+    [
+     "Construction & trades",
+     5
+    ],
+    [
+     "Home & yard services",
+     4
+    ],
+    [
+     "Health care",
+     3
+    ],
+    [
+     "Education & childcare",
+     2
+    ],
+    [
+     "Beauty & wellness",
+     2
+    ],
+    [
+     "Nonprofit, church & community",
+     2
+    ],
+    [
+     "Retail & goods",
+     2
+    ],
+    [
+     "Tech & media",
+     1
+    ],
+    [
+     "Food & drink",
+     1
+    ],
+    [
+     "Auto & transport",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     54
+    ],
+    [
+     "Assumed Business Name",
+     26
+    ],
+    [
+     "Domestic Nonprofit Corporation",
+     2
+    ],
+    [
+     "Foreign Business Corporation",
+     1
+    ]
+   ],
+   "sample": [
+    {
+     "name": "MINDFUL MYCELIUM BODYWORK LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-16",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Beauty & wellness",
+     "owner": "J. L. H.",
+     "has_street": true
+    },
+    {
+     "name": "NICOLES BOUTIQUE & MORE",
+     "type": "Assumed Business Name",
+     "date": "2026-10-23",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "N. C. B.",
+     "has_street": true
+    },
+    {
+     "name": "PAC WEST ACADEMY LLC",
+     "type": "Assumed Business Name",
+     "date": "2026-10-26",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Education & childcare",
+     "owner": "P. W. A.",
+     "has_street": true
+    },
+    {
+     "name": "SAMUEL & DENISE BRADY TRUCKING",
+     "type": "Assumed Business Name",
+     "date": "2026-10-27",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Auto & transport",
+     "owner": "S. J. B.",
+     "has_street": true
+    },
+    {
+     "name": "THE ROOTED COMMUNITY",
+     "type": "Domestic Nonprofit Corporation",
+     "date": "2026-10-27",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Nonprofit, church & community",
+     "owner": "J. M.",
+     "has_street": true
+    },
+    {
+     "name": "WEST TO EAST COAST RENTALS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-27",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "J. A. W.",
+     "has_street": true
+    },
+    {
+     "name": "ARTEMIS VETERINARY SERVICES, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-28",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "L. B.",
+     "has_street": true
+    },
+    {
+     "name": "PORTERBILT HANDYMAN",
+     "type": "Assumed Business Name",
+     "date": "2026-10-28",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "S. D. P.",
+     "has_street": true
+    },
+    {
+     "name": "INFLUENTS CENTER FOR MENTAL HEALTH SERVICES AND RESEARCH, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Health care",
+     "owner": "K. Z.",
+     "has_street": true
+    },
+    {
+     "name": "UNITED HANDS CLEANING CO, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Springfield",
+     "state": "OR",
+     "cat": "Home & yard services",
+     "owner": "D. R.",
+     "has_street": true
+    }
+   ]
+  },
+  "Cottage Grove": {
+   "total": 22,
+   "cats": [
+    [
+     "Other / unclear",
+     10
+    ],
+    [
+     "Consulting & professional",
+     5
+    ],
+    [
+     "Retail & goods",
+     2
+    ],
+    [
+     "Construction & trades",
+     2
+    ],
+    [
+     "Home & yard services",
+     1
+    ],
+    [
+     "Auto & transport",
+     1
+    ],
+    [
+     "Real estate & property",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     16
+    ],
+    [
+     "Assumed Business Name",
+     5
+    ],
+    [
+     "Domestic Nonprofit Corporation",
+     1
+    ]
+   ],
+   "sample": [
+    {
+     "name": "HEIRLOOM RANCH LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-01",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "T. B.",
+     "has_street": true
+    },
+    {
+     "name": "ROOM FOR MORE BOUTIQUE",
+     "type": "Assumed Business Name",
+     "date": "2026-10-06",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "M. L. S.",
+     "has_street": true
+    },
+    {
+     "name": "PRIORITY TREE SERVICE LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-09",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Home & yard services",
+     "owner": "D. M.",
+     "has_street": true
+    },
+    {
+     "name": "SHYNERIA RESTORATION CHURCH",
+     "type": "Domestic Nonprofit Corporation",
+     "date": "2026-10-14",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "J. A. M.",
+     "has_street": true
+    },
+    {
+     "name": "DOUBLE MINT DETAIL CO. LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-15",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Auto & transport",
+     "owner": "K. D.",
+     "has_street": true
+    },
+    {
+     "name": "CAPTAIN FORESTRY CONSULTING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-21",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "C. R.",
+     "has_street": true
+    },
+    {
+     "name": "DUNN WELL GROUP, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-26",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "D. R. D.",
+     "has_street": true
+    },
+    {
+     "name": "PRECISION WELDING & EXCAVATION LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-27",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "C. F.",
+     "has_street": true
+    },
+    {
+     "name": "AKR INVESTMENTS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "A. E. R.",
+     "has_street": true
+    },
+    {
+     "name": "MAINSTREET TATERS",
+     "type": "Assumed Business Name",
+     "date": "2026-10-30",
+     "city": "Cottage Grove",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "B. N.",
+     "has_street": true
+    }
+   ]
+  },
+  "Florence": {
+   "total": 22,
+   "cats": [
+    [
+     "Other / unclear",
+     11
+    ],
+    [
+     "Food & drink",
+     3
+    ],
+    [
+     "Construction & trades",
+     2
+    ],
+    [
+     "Real estate & property",
+     2
+    ],
+    [
+     "Beauty & wellness",
+     2
+    ],
+    [
+     "Consulting & professional",
+     1
+    ],
+    [
+     "Nonprofit, church & community",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     14
+    ],
+    [
+     "Assumed Business Name",
+     7
+    ],
+    [
+     "Domestic Nonprofit Corporation",
+     1
+    ]
+   ],
+   "sample": [
+    {
+     "name": "VICTOR BROUK CONSULTING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-05",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "V. B.",
+     "has_street": true
+    },
+    {
+     "name": "LINDA'S ALL-AMERICAN CAFE LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-08",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Food & drink",
+     "owner": "L. J. W.",
+     "has_street": true
+    },
+    {
+     "name": "SANDPINES WEST TOWNHOUSE ASSOCIATION, INC",
+     "type": "Domestic Nonprofit Corporation",
+     "date": "2026-10-08",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Nonprofit, church & community",
+     "owner": "R. M.",
+     "has_street": true
+    },
+    {
+     "name": "GARRETT FAMILY ESTATE SERVICES LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-19",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "J. J. G.",
+     "has_street": true
+    },
+    {
+     "name": "OCEANS EDGE CONSTRUCTION LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-19",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "B. P. E.",
+     "has_street": true
+    },
+    {
+     "name": "BIRD ROCK BAKERY LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-20",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Food & drink",
+     "owner": "L. A. M.",
+     "has_street": true
+    },
+    {
+     "name": "BEST MASSAGE SPA",
+     "type": "Assumed Business Name",
+     "date": "2026-10-21",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Beauty & wellness",
+     "owner": "R. L.",
+     "has_street": true
+    },
+    {
+     "name": "MARIAN'S BARBER SHOP AND SALON",
+     "type": "Assumed Business Name",
+     "date": "2026-10-26",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Beauty & wellness",
+     "owner": "M. M.",
+     "has_street": true
+    },
+    {
+     "name": "DMH PROPERTIES LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "M. G. H.",
+     "has_street": true
+    },
+    {
+     "name": "RUSSELL COMMUNICATIONS",
+     "type": "Assumed Business Name",
+     "date": "2026-10-29",
+     "city": "Florence",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "R. J. P.",
+     "has_street": true
+    }
+   ]
+  },
+  "Junction City": {
+   "total": 14,
+   "cats": [
+    [
+     "Other / unclear",
+     7
+    ],
+    [
+     "Retail & goods",
+     3
+    ],
+    [
+     "Nonprofit, church & community",
+     1
+    ],
+    [
+     "Beauty & wellness",
+     1
+    ],
+    [
+     "Construction & trades",
+     1
+    ],
+    [
+     "Tech & media",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     9
+    ],
+    [
+     "Assumed Business Name",
+     5
+    ]
+   ],
+   "sample": [
+    {
+     "name": "U-STORE N SAVE LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-05",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "M. K.",
+     "has_street": true
+    },
+    {
+     "name": "CLOVERMILL FARM LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-06",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "C. J. K.",
+     "has_street": true
+    },
+    {
+     "name": "THE SALON AT THE ARCHER OF CRESCENT PARK LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-06",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Beauty & wellness",
+     "owner": "J. L. L.",
+     "has_street": true
+    },
+    {
+     "name": "TWIN RIVERS MAT CLUB",
+     "type": "Assumed Business Name",
+     "date": "2026-10-06",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Nonprofit, church & community",
+     "owner": "C. J. H.",
+     "has_street": true
+    },
+    {
+     "name": "THE BEER STATION",
+     "type": "Assumed Business Name",
+     "date": "2026-10-15",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "J. S. L.",
+     "has_street": true
+    },
+    {
+     "name": "MORRELL FAMILY FARMS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-16",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "A. M.",
+     "has_street": true
+    },
+    {
+     "name": "TWELVE TRIBES BUSINESS ENTERPRISES LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-22",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "R. F.",
+     "has_street": true
+    },
+    {
+     "name": "HANDYMAN EUGENE",
+     "type": "Assumed Business Name",
+     "date": "2026-10-26",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "H. N. H.",
+     "has_street": true
+    },
+    {
+     "name": "K HARRIS DESIGNS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-27",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Tech & media",
+     "owner": "K. R. H.",
+     "has_street": true
+    },
+    {
+     "name": "GOD'S 100% CLEANSING, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Junction City",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "A. A. R.",
+     "has_street": true
+    }
+   ]
+  },
+  "Creswell": {
+   "total": 11,
+   "cats": [
+    [
+     "Other / unclear",
+     4
+    ],
+    [
+     "Nonprofit, church & community",
+     1
+    ],
+    [
+     "Consulting & professional",
+     1
+    ],
+    [
+     "Real estate & property",
+     1
+    ],
+    [
+     "Auto & transport",
+     1
+    ],
+    [
+     "Tech & media",
+     1
+    ],
+    [
+     "Home & yard services",
+     1
+    ],
+    [
+     "Food & drink",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     6
+    ],
+    [
+     "Assumed Business Name",
+     4
+    ],
+    [
+     "Foreign Nonprofit Corporation",
+     1
+    ]
+   ],
+   "sample": [
+    {
+     "name": "THE PASTURE PROJECT",
+     "type": "Foreign Nonprofit Corporation",
+     "date": "2026-10-01",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Nonprofit, church & community",
+     "owner": "J. C.",
+     "has_street": true
+    },
+    {
+     "name": "REDLINE MARKETING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-02",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "J. D. S.",
+     "has_street": true
+    },
+    {
+     "name": "CLARK FAMILY INVESTMENTS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-05",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "L. B.",
+     "has_street": true
+    },
+    {
+     "name": "JKNB AUTO DETAILING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-06",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Auto & transport",
+     "owner": "J. L. H.",
+     "has_street": true
+    },
+    {
+     "name": "NORTH OF THEN PRESS, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-07",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "M. W.",
+     "has_street": true
+    },
+    {
+     "name": "PHOTOWISE",
+     "type": "Assumed Business Name",
+     "date": "2026-10-09",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Tech & media",
+     "owner": "A. I. H.",
+     "has_street": true
+    },
+    {
+     "name": "JUST A MOM CLEANING SERVICE",
+     "type": "Assumed Business Name",
+     "date": "2026-10-14",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Home & yard services",
+     "owner": "A. S.",
+     "has_street": true
+    },
+    {
+     "name": "5230 HOLLY STREET, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-21",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "T. R. D.",
+     "has_street": true
+    },
+    {
+     "name": "COTTAGE GROVE SENTINEL",
+     "type": "Assumed Business Name",
+     "date": "2026-10-23",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "A. F. L.",
+     "has_street": true
+    },
+    {
+     "name": "LITTLE CRUMB BAKERY",
+     "type": "Assumed Business Name",
+     "date": "2026-10-28",
+     "city": "Creswell",
+     "state": "OR",
+     "cat": "Food & drink",
+     "owner": "K. A. C.",
+     "has_street": true
+    }
+   ]
+  },
+  "Veneta": {
+   "total": 11,
+   "cats": [
+    [
+     "Other / unclear",
+     5
+    ],
+    [
+     "Real estate & property",
+     3
+    ],
+    [
+     "Construction & trades",
+     1
+    ],
+    [
+     "Health care",
+     1
+    ],
+    [
+     "Consulting & professional",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     8
+    ],
+    [
+     "Assumed Business Name",
+     3
+    ]
+   ],
+   "sample": [
+    {
+     "name": "DEBATES LAND MANAGEMENT LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-05",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "J. D.",
+     "has_street": true
+    },
+    {
+     "name": "JJ FASHION HUB LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-06",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "J. D.",
+     "has_street": true
+    },
+    {
+     "name": "WICKED COMBO",
+     "type": "Assumed Business Name",
+     "date": "2026-10-08",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "M. D. H.",
+     "has_street": true
+    },
+    {
+     "name": "LISCANO INVESTMENTS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-13",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "C. L.",
+     "has_street": true
+    },
+    {
+     "name": "CHEEKY BOO BEES",
+     "type": "Assumed Business Name",
+     "date": "2026-10-14",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "G. L.",
+     "has_street": true
+    },
+    {
+     "name": "NIGHTSHIFT LENS RESTORATION LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-16",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "E. W. M.",
+     "has_street": true
+    },
+    {
+     "name": "DIVERGENT CARE SOLUTIONS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-19",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Health care",
+     "owner": "A. L. L.",
+     "has_street": true
+    },
+    {
+     "name": "GRANDMA'S ATTIC--EVENT RENTALS",
+     "type": "Assumed Business Name",
+     "date": "2026-10-28",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Real estate & property",
+     "owner": "J. C. S.",
+     "has_street": true
+    },
+    {
+     "name": "KAH TRADES GROUP LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "A. H.",
+     "has_street": true
+    },
+    {
+     "name": "HOLD YOUR HORSES LEATHER CO. LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-30",
+     "city": "Veneta",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "R. S.",
+     "has_street": true
+    }
+   ]
+  },
+  "Oakridge": {
+   "total": 4,
+   "cats": [
+    [
+     "Other / unclear",
+     2
+    ],
+    [
+     "Food & drink",
+     1
+    ],
+    [
+     "Construction & trades",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     4
+    ]
+   ],
+   "sample": [
+    {
+     "name": "MUDDY MARE LAUNDRY LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-02",
+     "city": "Oakridge",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "N. L.",
+     "has_street": true
+    },
+    {
+     "name": "CORNER BAR LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-05",
+     "city": "Oakridge",
+     "state": "OR",
+     "cat": "Food & drink",
+     "owner": "J. S.",
+     "has_street": true
+    },
+    {
+     "name": "LARRY B CONSTRUCTION, LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-09",
+     "city": "Oakridge",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "L. B.",
+     "has_street": true
+    },
+    {
+     "name": "47929 HWY 58 LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Oakridge",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "J. M. M.",
+     "has_street": true
+    }
+   ]
+  },
+  "Cheshire": {
+   "total": 4,
+   "cats": [
+    [
+     "Other / unclear",
+     3
+    ],
+    [
+     "Consulting & professional",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     4
+    ]
+   ],
+   "sample": [
+    {
+     "name": "TASHMAHAUL LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-13",
+     "city": "Cheshire",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "T. L. W.",
+     "has_street": true
+    },
+    {
+     "name": "WHISKEY & LACE MOBILE BARTENDING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-14",
+     "city": "Cheshire",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "J. A.",
+     "has_street": true
+    },
+    {
+     "name": "WALRUS AND HUMMINGBIRD BOOKKEEPING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-28",
+     "city": "Cheshire",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "M. A. C.",
+     "has_street": true
+    },
+    {
+     "name": "THISTLE SPRINGS LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-29",
+     "city": "Cheshire",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "E. C. H.",
+     "has_street": true
+    }
+   ]
+  },
+  "Lowell": {
+   "total": 4,
+   "cats": [
+    [
+     "Other / unclear",
+     3
+    ],
+    [
+     "Consulting & professional",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     2
+    ],
+    [
+     "Assumed Business Name",
+     2
+    ]
+   ],
+   "sample": [
+    {
+     "name": "AVAST LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-14",
+     "city": "Lowell",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "D. S. M.",
+     "has_street": true
+    },
+    {
+     "name": "WHITEBRIDGE LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-15",
+     "city": "Lowell",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "G. T. D.",
+     "has_street": true
+    },
+    {
+     "name": "IMTECH SOLUTIONS",
+     "type": "Assumed Business Name",
+     "date": "2026-10-19",
+     "city": "Lowell",
+     "state": "OR",
+     "cat": "Consulting & professional",
+     "owner": "R. J. I.",
+     "has_street": true
+    },
+    {
+     "name": "SUSAN H EGGER",
+     "type": "Assumed Business Name",
+     "date": "2026-10-27",
+     "city": "Lowell",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "S. H. E.",
+     "has_street": true
+    }
+   ]
+  },
+  "Elmira": {
+   "total": 3,
+   "cats": [
+    [
+     "Other / unclear",
+     2
+    ],
+    [
+     "Construction & trades",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     3
+    ]
+   ],
+   "sample": [
+    {
+     "name": "RIVERFRONT RETREAT LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-08",
+     "city": "Elmira",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "M. L. B.",
+     "has_street": true
+    },
+    {
+     "name": "MONROE CONTRACTING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-13",
+     "city": "Elmira",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "T. M. T.",
+     "has_street": true
+    },
+    {
+     "name": "DOG FRIENDLY GEAR LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-22",
+     "city": "Elmira",
+     "state": "OR",
+     "cat": "Other / unclear",
+     "owner": "K. G.",
+     "has_street": true
+    }
+   ]
+  },
+  "Dexter": {
+   "total": 3,
+   "cats": [
+    [
+     "Retail & goods",
+     2
+    ],
+    [
+     "Construction & trades",
+     1
+    ]
+   ],
+   "types": [
+    [
+     "Domestic Limited Liability Company",
+     2
+    ],
+    [
+     "Assumed Business Name",
+     1
+    ]
+   ],
+   "sample": [
+    {
+     "name": "AFFORDABLE FENCING & DECKING LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-14",
+     "city": "Dexter",
+     "state": "OR",
+     "cat": "Construction & trades",
+     "owner": "C. C.",
+     "has_street": true
+    },
+    {
+     "name": "LOST CREEK LITHO CRAFT LLC",
+     "type": "Domestic Limited Liability Company",
+     "date": "2026-10-19",
+     "city": "Dexter",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "K. A. S.",
+     "has_street": true
+    },
+    {
+     "name": "MORE FLOWERS, PLEASE!",
+     "type": "Assumed Business Name",
+     "date": "2026-10-29",
+     "city": "Dexter",
+     "state": "OR",
+     "cat": "Retail & goods",
+     "owner": "G. S.",
+     "has_street": true
+    }
+   ]
+  }
+ }
+}

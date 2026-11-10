@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zcloud8891.github.io/new-business-list/sitemap.xml
