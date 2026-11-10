@@ -352,6 +352,9 @@ def render_all(sums):
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     os.makedirs(OUT)
+    # keep Google Search Console verification + Jekyll opt-out across rebuilds
+    open(os.path.join(OUT, 'google4693936bfde5db7c.html'), 'w').write('google-site-verification: google4693936bfde5db7c.html\n')
+    open(os.path.join(OUT, '.nojekyll'), 'w').write('')
     latest = max(sums)
     for m, s in sorted(sums.items()):
         render_month(s, latest, sorted(sums))
