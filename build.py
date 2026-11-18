@@ -21,6 +21,8 @@ from lane_rules import LANE_ZIPS, NON_LANE_CITIES, category_guess, is_towing
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SUMMARIES = os.path.join(HERE, 'summaries')
+WEEKLY = os.path.join(SUMMARIES, 'weekly')
+WEEKLY_DATASET_PAGE = 'https://data.oregon.gov/business/Active-Businesses-ALL/tckn-sxa6'
 OUT = os.path.join(HERE, 'docs')
 
 # ---------- config ----------
@@ -177,6 +179,14 @@ header.top nav{white-space:nowrap}header.top nav a{margin-left:10px;font-size:.8
 @media(max-width:640px){.smp thead{display:none}.smp tr{display:block;border-bottom:2px solid var(--line);padding:6px 0}.smp td{display:flex;gap:10px;border:0;padding:3px 10px}
 .smp td:before{content:attr(data-l);flex:0 0 32%;color:var(--mute);font-size:.85rem}header.top .brand{font-size:.95rem}}
 @media(min-width:700px){.hero h1{font-size:2.1rem}}
+.kicker{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.wk{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:16px}
+.wk h2{margin-bottom:4px}.wk .when{color:var(--mute);font-size:.9rem;margin:0 0 12px}
+ol.picks{list-style:none;padding:0;margin:12px 0 0;counter-reset:p}ol.picks li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 10px;padding:10px 0;border-top:1px solid var(--line)}
+ol.picks b{font-weight:700;overflow-wrap:anywhere;flex:1 1 60%}ol.picks span{color:var(--mute);font-size:.88rem;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}.chips li{background:#f1efe7;border-radius:999px;padding:4px 10px;font-size:.85rem}
+.rules{background:#f6f4ec;border-radius:12px;padding:14px 16px}
+@media(max-width:420px){.btn{display:block;text-align:center;margin:8px 0}header.top nav a{margin-left:8px;font-size:.82rem}.hero h1{font-size:1.5rem}.stats{grid-template-columns:1fr 1fr}}
 """
 
 def bars(pairs, total):
@@ -190,11 +200,11 @@ def sample_table(rows, area_word):
         return ''
     trs = ''.join(
         f"<tr><td data-l='Business'><b>{E(r['name'])}</b></td><td data-l='Type'>{E(r['type'])}</td><td data-l='Filed'>{E(r['date'])}</td><td data-l='City'>{E(r['city'])}</td><td data-l='Category*'>{E(r['cat'])}</td>"
-        f"<td class=mask data-l='Owner'>{E(r['owner']) + ' •••••' if r['owner'] else '—'}</td><td class=mask data-l='Street'>{'•••• ••••• (in full list)' if r['has_street'] else '—'}</td></tr>"
+        f"<td class=mask data-l='Street'>{'•••• ••••• (in full list)' if r['has_street'] else '—'}</td></tr>"
         for r in rows)
     return (f'<div class="scroll"><table class="tbl smp"><thead><tr><th>Business</th><th>Type</th><th>Filed</th><th>City</th>'
-            f'<th>Category*</th><th>Owner / officer</th><th>Street address</th></tr></thead><tbody>{trs}</tbody></table></div>'
-            f'<p class="small">A sample of {len(rows)} {area_word} filings. Owner names and street addresses are masked here; '
+            f'<th>Category*</th><th>Street address</th></tr></thead><tbody>{trs}</tbody></table></div>'
+            f'<p class="small">A sample of {len(rows)} {area_word} filings. Street addresses are hidden here; '
             f'the full list shows them as filed with the state. *Category is our best guess from the business name.</p>')
 
 WHO = """<section><div class="w"><h2>Who this is for</h2><p>Brand-new owners need nearly everything in their first month. If you sell any of this, these are your warmest leads:</p>
@@ -203,16 +213,17 @@ WHO = """<section><div class="w"><h2>Who this is for</h2><p>Brand-new owners nee
 <li><b>Banks and credit unions</b>: business checking, merchant services, loans</li><li><b>Commercial cleaners</b>: offices, shops and restaurants that just opened</li></ul></div></section>"""
 
 def compliance():
-    return """<section><div class="w"><h2>A reminder before you reach out</h2>
-<p>Many new owners are sole proprietors using a home address and a personal cell phone. If you email them, follow <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" rel="nofollow">CAN-SPAM</a>: honest subject lines, your postal address, and an opt-out you honor within 10 business days. If you call or text, the <a href="https://www.fcc.gov/general/telemarketing-and-robocalls" rel="nofollow">TCPA</a> bans autodialed, prerecorded or AI-voice marketing to cell phones without prior written consent, and the <a href="https://www.donotcall.gov/" rel="nofollow">Do Not Call Registry</a> can apply. Some owners have asked the state not to disclose a home address under ORS 192.445. Please respect that. Mail and an honest, useful offer work best anyway.</p></div></section>"""
+    return """<section><div class="w"><div class="rules"><h2>Buyer rules</h2>
+<p><b>If you subscribe, you agree to follow CAN-SPAM, the TCPA and the Do Not Call rules when you contact anyone on the list, and not to send mail made to look like a government or state filing notice.</b></p>
+<p>Many new owners are sole proprietors using a home address and a personal cell phone. If you email them, follow <a href="https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business" rel="nofollow">CAN-SPAM</a>: honest subject lines, your postal address, and an opt-out you honor within 10 business days. If you call or text, the <a href="https://www.fcc.gov/general/telemarketing-and-robocalls" rel="nofollow">TCPA</a> bans autodialed, prerecorded or AI-voice marketing to cell phones without prior written consent, and the <a href="https://www.donotcall.gov/" rel="nofollow">Do Not Call Registry</a> can apply. Some owners have asked the state not to disclose a home address under ORS 192.445. Please respect that. Mail and an honest, useful offer work best anyway.</p></div></div></section>"""
 
 def faq_items(tier, price, month):
     items = [
-        ('What exactly do I get?', f'A Google Sheet with every {tier} business that registered with the Oregon Secretary of State in {month_name(month)}: business name, entity type, filing date, street address, city and ZIP, registered agent, and the owners or officers named in the filing, plus a category guess. Right after checkout you\'re sent straight to the Sheet.'),
-        ('How often does it update?', 'Monthly. The state posts last month\'s filings somewhere between the 5th and the 17th of each month. A script checks every day, and a new tab for the new month shows up on its own, usually the same day the state posts it.'),
+        ('What exactly do I get?', f'A Google Sheet with every {tier} business that registered with the Oregon Secretary of State: business name, entity type, filing date, street address, city and ZIP, registered agent, and the owners or officers named in the filing, plus a category guess. Right after checkout you\'re sent straight to the Sheet.'),
+        ('How often does it update?', 'The free sample and counts on this site refresh once a week, after the state updates its weekly business file. Your Google Sheet gets a new tab for each month when the state posts its monthly new-business file, usually between the 5th and the 17th.'),
         ('How much is it?', f'${price} a month. Cancel anytime.' + (f' Manage or cancel your plan <a href="{E(CANCEL_URL)}">here</a>.' if CANCEL_URL else '')),
         ('Are phone numbers and emails included?', 'No. The state filing doesn\'t include them, and we don\'t make them up. You get what\'s on the public record: names, addresses and filing details.'),
-        ('Where does the data come from?', f'The Oregon Secretary of State\'s public business registry, published on <a href="{DATASET_PAGE}" rel="nofollow">data.oregon.gov</a> as "New Businesses Registered Last Month." Oregon law puts this data in the public domain (ORS 276A.368). We clean it, sort it by Lane County ZIP code, and add categories.'),
+        ('Where does the data come from?', f'Oregon public records: the Secretary of State\'s business registry, published on data.oregon.gov as <a href="{WEEKLY_DATASET_PAGE}" rel="nofollow">"Active Businesses – ALL"</a> (weekly) and <a href="{DATASET_PAGE}" rel="nofollow">"New Businesses Registered Last Month"</a> (monthly). Oregon law puts this data in the public domain (ORS 276A.368). We clean it, sort it by Lane County ZIP code, merge duplicate filings, and add categories.'),
         ('Is it complete and accurate?', 'It\'s as good as the state\'s file, and the state doesn\'t guarantee it, so neither can we. The list is provided as-is. Categories are a guess from the business name. A few businesses only list a mailing address.'),
         ('Why no towing companies?', 'We leave towing and roadside-assistance businesses out of every list on purpose.'),
     ]
@@ -238,10 +249,10 @@ def page(path, title, desc, canonical, body, ld, noindex=False):
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{E(canonical)}">{robots}
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="{E(canonical)}">
 <meta name="theme-color" content="#1F2A44"><style>{CSS}</style><script type="application/ld+json">{ldj}</script></head><body>
-<header class="top"><div class="w"><a class="brand" href="{href('/')}">New Business List</a><nav><a href="{href('/lane-county/')}">Lane County</a><a href="{href('/oregon/')}">Oregon</a><a href="{href('/archive/')}">Archive</a></nav></div></header>
+<header class="top"><div class="w"><a class="brand" href="{href('/')}">New Biz Wire</a><nav><a href="{href('/lane-county/')}">Lane County</a><a href="{href('/oregon/')}">Oregon</a><a href="{href('/archive/')}">Archive</a></nav></div></header>
 {body}
-<footer><div class="w"><p>Source: Oregon Secretary of State public business registry records, via <a href="{DATASET_PAGE}" rel="nofollow">data.oregon.gov</a> ("New Businesses Registered Last Month"), public domain under ORS 276A.368. Provided as-is; the state does not warrant completeness or accuracy, and neither do we. Towing and roadside businesses are excluded.</p>
-<p>Lane County New Business List and Oregon New Business List are run by a dad in Veneta, Oregon. Payments are handled securely by Stripe.</p></div></footer></body></html>
+<footer><div class="w"><p>Source: Oregon public records from the Secretary of State's business registry, via data.oregon.gov (<a href="{WEEKLY_DATASET_PAGE}" rel="nofollow">"Active Businesses – ALL"</a> and <a href="{DATASET_PAGE}" rel="nofollow">"New Businesses Registered Last Month"</a>), public domain under ORS 276A.368. Provided as-is; the state does not warrant completeness or accuracy, and neither do we. Towing and roadside businesses are excluded.</p>
+<p>New Biz Wire (the Lane County and Oregon New Business Lists) is run by a dad in Veneta, Oregon. Payments are handled securely by Stripe.</p></div></footer></body></html>
 """
     dest = os.path.join(OUT, path.strip('/'), 'index.html') if path.strip('/') else os.path.join(OUT, 'index.html')
     os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -281,12 +292,14 @@ def render_month(s, latest, months):
         desc = f'{fmt(L["total"])} new businesses registered in Lane County, Oregon in {mn}. See counts by city and category and a free sample. Full list with owners and addresses: $9/mo.'
         body = hero(title, f'Every new business that registered with the Oregon Secretary of State in {mn} with a Lane County address: {fmt(L["total"])} in all, from Eugene and Springfield to Florence and Oakridge.', 9, LANE_URL, ('All of Oregon: $19/mo', OREGON_URL))
         body += archive_note(m, latest).replace('{LATEST}', href('/lane-county/'))
-        body += f'''<section><div class="w"><h2>{mn} at a glance</h2><div class="stats"><div class="stat"><b>{fmt(L["total"])}</b><span>new Lane County businesses</span></div>
+        if is_latest and path == '/lane-county/':
+            _w = load_weeks(); body += weekly_block(_w[max(_w)], 'lane') if _w else ''
+        body += f'''<section><div class="w"><h2>{mn}: the full month</h2><div class="stats"><div class="stat"><b>{fmt(L["total"])}</b><span>new Lane County businesses</span></div>
 <div class="stat"><b>{fmt(len(L["cities"]))}</b><span>towns and cities</span></div><div class="stat"><b>{fmt(L["with_people"])}</b><span>with an owner or officer named</span></div>
 <div class="stat"><b>{fmt(L["principal"])}</b><span>with a principal business address</span></div></div></div></section>
 <section><div class="w"><h2>New businesses by city</h2>{bars(L["cities"], L["total"])}<p class="small">City pages (3 or more filings):</p>{city_links(s, m, is_latest and path == "/lane-county/")}</div></section>
 <section><div class="w"><h2>By category</h2>{bars(L["cats"], L["total"])}<p class="small">Category is a guess from the business name, so about half land in "Other / unclear."</p></div></section>
-<section><div class="w"><h2>Free sample</h2>{sample_table(L["sample"], "Lane County")}{buy_box(9, LANE_URL, L["total"], "Lane County")}</div></section>
+<section><div class="w"><h2>Free sample from {mn}</h2>{sample_table(L["sample"], "Lane County")}{buy_box(9, LANE_URL, L["total"], "Lane County")}</div></section>
 {WHO}{faq_html(lane_faq)}{compliance()}'''
         ld = [product_ld('Lane County New Business List', 'Monthly Google Sheet of every new business registered in Lane County, Oregon, from Oregon Secretary of State public records.', 9, LANE_URL, canon), faq_ld(lane_faq)]
         page(path, title, desc, canon, body, ld)
@@ -296,11 +309,13 @@ def render_month(s, latest, months):
         desc = f'{fmt(O["total"])} new business registrations with the Oregon Secretary of State in {mn}. Counts by city and category, a free sample, and the full statewide list for $19/mo.'
         body = hero(title, f'Every business that registered with the Oregon Secretary of State in {mn}: {fmt(O["total"])} filings. {fmt(O["or_address"])} list an Oregon address; {fmt(O["out_of_state"])} are out-of-state companies registering to do business here.', 19, OREGON_URL, ('Just Lane County: $9/mo', LANE_URL))
         body += archive_note(m, latest).replace('{LATEST}', href('/oregon/'))
-        body += f'''<section><div class="w"><h2>{mn} at a glance</h2><div class="stats"><div class="stat"><b>{fmt(O["total"])}</b><span>new registrations statewide</span></div>
+        if is_latest and path == '/oregon/':
+            _w = load_weeks(); body += weekly_block(_w[max(_w)], 'oregon') if _w else ''
+        body += f'''<section><div class="w"><h2>{mn}: the full month</h2><div class="stats"><div class="stat"><b>{fmt(O["total"])}</b><span>new registrations statewide</span></div>
 <div class="stat"><b>{fmt(O["or_address"])}</b><span>with an Oregon address</span></div><div class="stat"><b>{fmt(L["total"])}</b><span>in Lane County</span></div></div></div></section>
 <section><div class="w"><h2>Top 25 Oregon cities</h2>{bars(O["cities"], O["or_address"])}</div></section>
 <section><div class="w"><h2>By category</h2>{bars(O["cats"], O["total"])}<p class="small">Category is a guess from the business name.</p></div></section>
-<section><div class="w"><h2>Free sample</h2>{sample_table(O["sample"], "Oregon")}{buy_box(19, OREGON_URL, O["total"], "Oregon")}</div></section>
+<section><div class="w"><h2>Free sample from {mn}</h2>{sample_table(O["sample"], "Oregon")}{buy_box(19, OREGON_URL, O["total"], "Oregon")}</div></section>
 {WHO}{faq_html(or_faq)}{compliance()}'''
         ld = [product_ld('Oregon New Business List', 'Monthly Google Sheet of every new business registered with the Oregon Secretary of State, statewide.', 19, OREGON_URL, canon), faq_ld(or_faq)]
         page(path, title, desc, canon, body, ld)
@@ -319,33 +334,76 @@ def render_month(s, latest, months):
             ld = [product_ld('Lane County New Business List', f'Monthly Google Sheet of every new business registered in Lane County, Oregon, including {c}.', 9, LANE_URL, canon), faq_ld(lane_faq)]
             page(path, title, desc, canon, body, ld)
 
+def load_weeks():
+    w = {}
+    if os.path.isdir(WEEKLY):
+        for f in sorted(os.listdir(WEEKLY)):
+            if re.fullmatch(r'\d{4}-\d{2}-\d{2}\.json', f):
+                w[f[:10]] = json.load(open(os.path.join(WEEKLY, f)))
+    return w
+
+def wk_range(w):
+    a = datetime.date.fromisoformat(w['week_start']); b = datetime.date.fromisoformat(w['week_end'])
+    return f"{a.strftime('%b')} {a.day}–{b.day}, {b.year}" if a.month == b.month else f"{a.strftime('%b')} {a.day}–{b.strftime('%b')} {b.day}, {b.year}"
+
+def weekly_block(w, area='lane'):
+    """Free public weekly sample: counts + ~5 business names with a category. No personal names, no addresses."""
+    if not w:
+        return ''
+    d = w[area]; label = 'Lane County' if area == 'lane' else 'Oregon'
+    verb = 'opened' if area == 'lane' else 'registered'
+    picks = ''.join(f'<li><b>{E(x["name"])}</b><span>{E(x["cat"])}</span></li>' for x in d['sample'])
+    cats = ''.join(f'<li>{E(c)}: {fmt(n)}</li>' for c, n in d['cats'] if c != 'Other / unclear')
+    if area == 'lane':
+        extra = ''.join(f'<li>{E(c)}: {fmt(n)}</li>' for c, n in d.get('cities', [])[:6])
+        extra = f'<p class="small" style="margin:12px 0 0">By town</p><ul class="chips">{extra}</ul>'
+    else:
+        extra = f'<p class="small" style="margin:12px 0 0">{fmt(d.get("or_address", 0))} list an Oregon address; {fmt(d["flags"]["out_of_state"])} are based out of state.</p>'
+    return f'''<section><div class="w"><div class="wk"><span class="kicker">Free weekly sample</span>
+<h2>{label} {verb} {fmt(d["total"])} new businesses this week</h2><p class="when">Registered {wk_range(w)} · from the state's weekly file</p>
+<p style="margin:0">Five from this week's list:</p><ol class="picks">{picks}</ol>
+<p class="small" style="margin:12px 0 0">By category (our guess from the name)</p><ul class="chips">{cats}</ul>{extra}
+<p class="small" style="margin:12px 0 0">The public sample shows business names and categories only. Owner names and street addresses aren't published here.</p></div></div></section>'''
+
 def render_home(s, months):
     m = s['month']; mn = month_name(m); L, O = s['lane'], s['oregon']
-    h1 = f'{fmt(L["total"])} new Lane County businesses registered in {mn}. Get every one for $9 a month.'
-    title = f'Lane County & Oregon New Business Lists — {mn}'
-    desc = f'{fmt(L["total"])} new Lane County businesses and {fmt(O["total"])} statewide registered in {mn}. Monthly lists from Oregon Secretary of State records, $9/mo Lane, $19/mo all Oregon.'
-    body = hero(h1, f'All of Oregon is $19 a month ({fmt(O["total"])} filings in {mn}). It\'s built from the state\'s own records by a dad in Veneta, and a fresh Google Sheet shows up on its own every month.', 9, LANE_URL, ('All of Oregon: $19/mo', OREGON_URL))
-    body += f'''<section><div class="w"><h2>{mn} at a glance</h2><div class="stats"><div class="stat"><b>{fmt(L["total"])}</b><span>Lane County</span></div>
+    weeks = load_weeks(); w = weeks[max(weeks)] if weeks else None
+    if w:
+        h1 = 'Every new Lane County and Oregon business, every week.'
+        lead = (f'New Biz Wire is a weekly digest of new business registrations: {fmt(w["lane"]["total"])} in Lane County and {fmt(w["oregon"]["total"])} statewide for {wk_range(w)}. '
+                'It\'s built from the state\'s own records by a dad in Veneta. The full list is $9 a month for Lane County, $19 for all of Oregon.')
+        desc = f'{fmt(w["lane"]["total"])} new Lane County businesses and {fmt(w["oregon"]["total"])} statewide registered {wk_range(w)}. Free weekly sample from Oregon Secretary of State records; full lists $9/mo Lane, $19/mo Oregon.'
+    else:
+        h1 = f'{fmt(L["total"])} new Lane County businesses registered in {mn}.'
+        lead = 'Built from the state\'s own records by a dad in Veneta.'
+        desc = f'{fmt(L["total"])} new Lane County businesses registered in {mn}.'
+    title = 'New Biz Wire: new businesses in Lane County & Oregon, every week'
+    body = f'<div class="hero"><div class="w"><span class="kicker">New Biz Wire · weekly</span><h1>{E(h1)}</h1><p>{lead}</p><a class="btn" href="{E(LANE_URL)}">Lane County list: $9/mo</a><a class="btn alt" href="{E(OREGON_URL)}">All of Oregon: $19/mo</a></div></div>'
+    body += weekly_block(w, 'lane') + weekly_block(w, 'oregon')
+    body += f'''<section><div class="w"><h2>Pick your list</h2><p><b>Lane County: $9/mo.</b> Eugene, Springfield, Florence, Cottage Grove, Veneta and every other Lane County town. <a href="{href('/lane-county/')}">See the numbers</a></p>
+<p><b>All of Oregon: $19/mo.</b> Every new registration in the state. <a href="{href('/oregon/')}">See the numbers</a></p>
+<p class="small">Lane County town pages ({mn} counts):</p>{city_links(s, m, True)}</div></section>
+<section><div class="w"><h2>{mn} at a glance</h2><div class="stats"><div class="stat"><b>{fmt(L["total"])}</b><span>Lane County</span></div>
 <div class="stat"><b>{fmt(O["total"])}</b><span>all Oregon</span></div>
 {''.join(f'<div class="stat"><b>{fmt(n)}</b><span>{E(c)}</span></div>' for c, n in L["cities"][:4])}</div></div></section>
-<section><div class="w"><h2>Pick your list</h2><p><b>Lane County New Business List: $9/mo.</b> Eugene, Springfield, Florence, Cottage Grove, Veneta and every other Lane County town. <a href="{href('/lane-county/')}">See {mn}</a></p>
-<p><b>Oregon New Business List: $19/mo.</b> Every new registration in the state. <a href="{href('/oregon/')}">See {mn}</a></p>
-<p class="small">Lane County city pages:</p>{city_links(s, m, True)}</div></section>
-<section><div class="w"><h2>Free sample from Lane County</h2>{sample_table(L["sample"][:5], "Lane County")}{buy_box(9, LANE_URL, L["total"], "Lane County")}</div></section>
 {WHO}{faq_html(faq_items('Lane County', 9, m))}{compliance()}'''
-    ld = [{'@type': 'WebSite', 'name': 'New Business List', 'url': url('/')},
-          product_ld('Lane County New Business List', 'Monthly Google Sheet of every new business registered in Lane County, Oregon.', 9, LANE_URL, url('/lane-county/')),
-          product_ld('Oregon New Business List', 'Monthly Google Sheet of every new business registered in Oregon.', 19, OREGON_URL, url('/oregon/')),
+    ld = [{'@type': 'WebSite', 'name': 'New Biz Wire', 'url': url('/')},
+          product_ld('Lane County New Business List', 'Google Sheet of every new business registered in Lane County, Oregon, from Oregon Secretary of State public records.', 9, LANE_URL, url('/lane-county/')),
+          product_ld('Oregon New Business List', 'Google Sheet of every new business registered in Oregon, from Oregon Secretary of State public records.', 19, OREGON_URL, url('/oregon/')),
           faq_ld(faq_items('Lane County', 9, m))]
     page('/', title, desc, url('/'), body, ld)
 
 def render_archive(sums):
     rows = ''.join(f'<tr><td>{month_name(m)}</td><td class=n><a href="{href("/lane-county/" + m + "/")}">{fmt(s["lane"]["total"])}</a></td><td class=n><a href="{href("/oregon/" + m + "/")}">{fmt(s["oregon"]["total"])}</a></td></tr>'
                    for m, s in sorted(sums.items(), reverse=True))
-    title = 'Oregon new business counts by month: archive'
-    body = f'<div class="hero"><div class="w"><h1>{E(title)}</h1><p>Every month we\'ve published, with Lane County and statewide totals.</p><a class="btn" href="{LANE_URL}">Lane County: $9/mo</a><a class="btn alt" href="{OREGON_URL}">All Oregon: $19/mo</a></div></div>'
+    title = 'Oregon new business counts: archive'
+    body = f'<div class="hero"><div class="w"><h1>{E(title)}</h1><p>Every week and month we\'ve published, with Lane County and statewide totals.</p><a class="btn" href="{LANE_URL}">Lane County: $9/mo</a><a class="btn alt" href="{OREGON_URL}">All Oregon: $19/mo</a></div></div>'
     body += f'<section><div class="w"><div class="scroll"><table class="tbl"><thead><tr><th>Month</th><th>Lane County</th><th>All Oregon</th></tr></thead><tbody>{rows}</tbody></table></div></div></section>'
-    page('/archive/', title, 'Monthly counts of new business registrations in Lane County and Oregon, from Oregon Secretary of State records.', url('/archive/'), body, [{'@type': 'CollectionPage', 'name': title}])
+    weeks = load_weeks()
+    if weeks:
+        wrows = ''.join(f'<tr><td>{wk_range(w)}</td><td class=n>{fmt(w["lane"]["total"])}</td><td class=n>{fmt(w["oregon"]["total"])}</td></tr>' for _, w in sorted(weeks.items(), reverse=True))
+        body += f'<section><div class="w"><h2>By week</h2><div class="scroll"><table class="tbl"><thead><tr><th>Week registered</th><th>Lane County</th><th>All Oregon</th></tr></thead><tbody>{wrows}</tbody></table></div></div></section>'
+    page('/archive/', title, 'Weekly and monthly counts of new business registrations in Lane County and Oregon, from Oregon Secretary of State records.', url('/archive/'), body, [{'@type': 'CollectionPage', 'name': title}])
 
 def render_all(sums):
     import shutil
@@ -387,8 +445,14 @@ def load_sums():
 def main():
     os.makedirs(SUMMARIES, exist_ok=True)
     sums = load_sums()
+    rows = None
     if '--rebuild' not in sys.argv:
-        rows = fetch_rows()
+        try:
+            rows = fetch_rows()
+        except Exception as e:
+            print(f'monthly file fetch failed ({e}); re-rendering from saved summaries', file=sys.stderr)
+            rows = None
+    if rows:
         month = max((r.get('registry_date') or '')[:7] for r in rows)
         if month in sums and '--force' not in sys.argv:
             print(f'{month} already summarized; re-rendering only')

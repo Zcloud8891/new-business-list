@@ -1,2 +1,9 @@
 __pycache__/
 ops/NOTES.md
+
+# Full lists (owner names, addresses) are the paid product: never publish
+data/
+*.orig
+lead-batch-*.md
+dojo-new-owner-leads-*.md
+welcome-letter-new-owners.txt

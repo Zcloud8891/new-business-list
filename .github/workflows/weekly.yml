@@ -1,0 +1,35 @@
+name: New Biz Wire weekly
+on:
+  schedule:
+    - cron: '0 15 * * 2'   # Tuesdays 15:00 UTC (7 AM PT in winter, 8 AM PT in summer)
+  workflow_dispatch:
+    inputs:
+      week_end:
+        description: 'Optional: Sunday that ends the week to pull (YYYY-MM-DD). Blank = latest complete week.'
+        required: false
+permissions:
+  contents: write
+concurrency:
+  group: weekly-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Pull last week's new businesses (data.oregon.gov tckn-sxa6)
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: |
+          if [ -n "${{ github.event.inputs.week_end }}" ]; then python3 nbw.py --end "${{ github.event.inputs.week_end }}"; else python3 nbw.py; fi
+      - name: Rebuild site (also picks up a new monthly file if the state posted one)
+        run: python3 build.py
+      - name: Commit if changed
+        run: |
+          git config user.name "new-biz-wire-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A summaries docs
+          if git diff --cached --quiet; then echo "no change"; else git commit -m "Weekly run $(date -u +%Y-%m-%d)" && git push; fi

@@ -1,0 +1,297 @@
+{
+ "week_start": "2026-11-02",
+ "week_end": "2026-11-08",
+ "built": "2026-11-17",
+ "source_rows": 4866,
+ "duplicates_merged": 2,
+ "towing_removed": 1,
+ "lane": {
+  "cities": [
+   [
+    "Eugene",
+    73
+   ],
+   [
+    "Springfield",
+    16
+   ],
+   [
+    "Florence",
+    7
+   ],
+   [
+    "Cottage Grove",
+    5
+   ],
+   [
+    "Creswell",
+    4
+   ],
+   [
+    "Junction City",
+    4
+   ],
+   [
+    "Westlake",
+    4
+   ],
+   [
+    "Veneta",
+    2
+   ],
+   [
+    "Marcola",
+    2
+   ],
+   [
+    "Jasper",
+    2
+   ],
+   [
+    "Vida",
+    2
+   ],
+   [
+    "Elmira",
+    1
+   ],
+   [
+    "Blue River",
+    1
+   ],
+   [
+    "Dorena",
+    1
+   ],
+   [
+    "Cheshire",
+    1
+   ],
+   [
+    "Swisshome",
+    1
+   ],
+   [
+    "Oakridge",
+    1
+   ]
+  ],
+  "total": 127,
+  "cats": [
+   [
+    "Other / unclear",
+    60
+   ],
+   [
+    "Consulting & professional",
+    12
+   ],
+   [
+    "Real estate & property",
+    11
+   ],
+   [
+    "Retail & goods",
+    7
+   ],
+   [
+    "Construction & trades",
+    7
+   ],
+   [
+    "Nonprofit, church & community",
+    7
+   ],
+   [
+    "Auto & transport",
+    5
+   ],
+   [
+    "Home & yard services",
+    4
+   ],
+   [
+    "Beauty & wellness",
+    4
+   ],
+   [
+    "Tech & media",
+    4
+   ],
+   [
+    "Health care",
+    3
+   ],
+   [
+    "Food & drink",
+    2
+   ],
+   [
+    "Education & childcare",
+    1
+   ]
+  ],
+  "flags": {
+   "out_of_state": 0,
+   "agent_address_as_main": 0,
+   "holding_like": 10,
+   "storefront_likely": 5
+  },
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    74
+   ],
+   [
+    "Assumed Business Name",
+    43
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    6
+   ],
+   [
+    "Domestic Business Corporation",
+    3
+   ],
+   [
+    "Foreign Limited Liability Company",
+    1
+   ]
+  ],
+  "sample": [
+   {
+    "name": "RIVER VALLEY CHIROPRACTIC LLC",
+    "cat": "Health care"
+   },
+   {
+    "name": "CROW FAMILY STORE LLC",
+    "cat": "Retail & goods"
+   },
+   {
+    "name": "EUGENE MIDDLE HOUSING DEVELOPMENT LLC",
+    "cat": "Real estate & property"
+   },
+   {
+    "name": "PRECISION AUTO INSPECT LLC",
+    "cat": "Auto & transport"
+   },
+   {
+    "name": "JIREH HR CONSULTING LLC",
+    "cat": "Consulting & professional"
+   }
+  ]
+ },
+ "oregon": {
+  "or_address": 1528,
+  "total": 1768,
+  "cats": [
+   [
+    "Other / unclear",
+    917
+   ],
+   [
+    "Consulting & professional",
+    214
+   ],
+   [
+    "Tech & media",
+    105
+   ],
+   [
+    "Real estate & property",
+    104
+   ],
+   [
+    "Construction & trades",
+    85
+   ],
+   [
+    "Health care",
+    66
+   ],
+   [
+    "Retail & goods",
+    63
+   ],
+   [
+    "Home & yard services",
+    52
+   ],
+   [
+    "Nonprofit, church & community",
+    51
+   ],
+   [
+    "Auto & transport",
+    48
+   ],
+   [
+    "Beauty & wellness",
+    33
+   ],
+   [
+    "Food & drink",
+    22
+   ],
+   [
+    "Education & childcare",
+    8
+   ]
+  ],
+  "flags": {
+   "out_of_state": 239,
+   "agent_address_as_main": 136,
+   "holding_like": 115,
+   "storefront_likely": 49
+  },
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    1073
+   ],
+   [
+    "Assumed Business Name",
+    395
+   ],
+   [
+    "Foreign Limited Liability Company",
+    119
+   ],
+   [
+    "Foreign Business Corporation",
+    76
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    50
+   ],
+   [
+    "Domestic Business Corporation",
+    35
+   ]
+  ],
+  "sample": [
+   {
+    "name": "RIVER VALLEY CHIROPRACTIC LLC",
+    "cat": "Health care"
+   },
+   {
+    "name": "CINDER AND OAK WOODFIRED BBQ LLC",
+    "cat": "Food & drink"
+   },
+   {
+    "name": "ROOT & RISE RIVER YOGA LLC",
+    "cat": "Beauty & wellness"
+   },
+   {
+    "name": "CROW FAMILY STORE LLC",
+    "cat": "Retail & goods"
+   },
+   {
+    "name": "BZB DAYCARE LLC",
+    "cat": "Education & childcare"
+   }
+  ]
+ }
+}

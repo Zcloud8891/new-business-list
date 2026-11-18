@@ -1,0 +1,277 @@
+{
+ "week_start": "2026-11-09",
+ "week_end": "2026-11-15",
+ "built": "2026-11-17",
+ "source_rows": 4497,
+ "duplicates_merged": 3,
+ "towing_removed": 4,
+ "lane": {
+  "cities": [
+   [
+    "Eugene",
+    75
+   ],
+   [
+    "Springfield",
+    21
+   ],
+   [
+    "Creswell",
+    6
+   ],
+   [
+    "Junction City",
+    4
+   ],
+   [
+    "Florence",
+    4
+   ],
+   [
+    "Cottage Grove",
+    3
+   ],
+   [
+    "Cheshire",
+    2
+   ],
+   [
+    "Veneta",
+    2
+   ],
+   [
+    "Oakridge",
+    2
+   ],
+   [
+    "Pleasant Hill",
+    2
+   ],
+   [
+    "Swisshome",
+    1
+   ],
+   [
+    "Mapleton",
+    1
+   ],
+   [
+    "Marcola",
+    1
+   ]
+  ],
+  "total": 124,
+  "cats": [
+   [
+    "Other / unclear",
+    68
+   ],
+   [
+    "Consulting & professional",
+    13
+   ],
+   [
+    "Food & drink",
+    8
+   ],
+   [
+    "Beauty & wellness",
+    7
+   ],
+   [
+    "Real estate & property",
+    6
+   ],
+   [
+    "Health care",
+    5
+   ],
+   [
+    "Tech & media",
+    4
+   ],
+   [
+    "Construction & trades",
+    4
+   ],
+   [
+    "Home & yard services",
+    3
+   ],
+   [
+    "Retail & goods",
+    3
+   ],
+   [
+    "Nonprofit, church & community",
+    2
+   ],
+   [
+    "Auto & transport",
+    1
+   ]
+  ],
+  "flags": {
+   "out_of_state": 0,
+   "agent_address_as_main": 2,
+   "holding_like": 6,
+   "storefront_likely": 5
+  },
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    83
+   ],
+   [
+    "Assumed Business Name",
+    35
+   ],
+   [
+    "Domestic Business Corporation",
+    3
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    2
+   ],
+   [
+    "Foreign Limited Liability Company",
+    1
+   ]
+  ],
+  "sample": [
+   {
+    "name": "ARTISTA NAIL SOURCE LLC",
+    "cat": "Beauty & wellness"
+   },
+   {
+    "name": "MATTHEW RIVERS TREE PLANNING LLC",
+    "cat": "Home & yard services"
+   },
+   {
+    "name": "TYLER BRADLEY AGENCY LLC",
+    "cat": "Consulting & professional"
+   },
+   {
+    "name": "SOUTHSIDE HOOPS",
+    "cat": "Nonprofit, church & community"
+   },
+   {
+    "name": "ARC MEDIA, LLC",
+    "cat": "Tech & media"
+   }
+  ]
+ },
+ "oregon": {
+  "or_address": 1406,
+  "total": 1631,
+  "cats": [
+   [
+    "Other / unclear",
+    849
+   ],
+   [
+    "Consulting & professional",
+    189
+   ],
+   [
+    "Real estate & property",
+    107
+   ],
+   [
+    "Tech & media",
+    95
+   ],
+   [
+    "Construction & trades",
+    89
+   ],
+   [
+    "Health care",
+    51
+   ],
+   [
+    "Beauty & wellness",
+    51
+   ],
+   [
+    "Retail & goods",
+    50
+   ],
+   [
+    "Nonprofit, church & community",
+    38
+   ],
+   [
+    "Home & yard services",
+    37
+   ],
+   [
+    "Auto & transport",
+    34
+   ],
+   [
+    "Food & drink",
+    29
+   ],
+   [
+    "Education & childcare",
+    12
+   ]
+  ],
+  "flags": {
+   "out_of_state": 225,
+   "agent_address_as_main": 131,
+   "holding_like": 111,
+   "storefront_likely": 55
+  },
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    988
+   ],
+   [
+    "Assumed Business Name",
+    375
+   ],
+   [
+    "Foreign Limited Liability Company",
+    124
+   ],
+   [
+    "Foreign Business Corporation",
+    63
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    41
+   ],
+   [
+    "Domestic Business Corporation",
+    35
+   ]
+  ],
+  "sample": [
+   {
+    "name": "ARTISTA NAIL SOURCE LLC",
+    "cat": "Beauty & wellness"
+   },
+   {
+    "name": "THE STORE ECLECTIPORIUM LLC",
+    "cat": "Retail & goods"
+   },
+   {
+    "name": "HONEY & COFFEE LLC",
+    "cat": "Food & drink"
+   },
+   {
+    "name": "RISAS & COLORES DAYCARE LLC",
+    "cat": "Education & childcare"
+   },
+   {
+    "name": "FAITH AUTOMOTIVE SALES & SERVICES LLC",
+    "cat": "Auto & transport"
+   }
+  ]
+ }
+}
