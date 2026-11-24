@@ -1,0 +1,277 @@
+{
+ "week_start": "2026-11-16",
+ "week_end": "2026-11-22",
+ "built": "2026-11-24",
+ "source_rows": 4796,
+ "duplicates_merged": 6,
+ "towing_removed": 5,
+ "lane": {
+  "cities": [
+   [
+    "Eugene",
+    73
+   ],
+   [
+    "Springfield",
+    19
+   ],
+   [
+    "Junction City",
+    4
+   ],
+   [
+    "Creswell",
+    4
+   ],
+   [
+    "Florence",
+    3
+   ],
+   [
+    "Veneta",
+    2
+   ],
+   [
+    "Fall Creek",
+    2
+   ],
+   [
+    "Coburg",
+    2
+   ],
+   [
+    "Cottage Grove",
+    2
+   ],
+   [
+    "Cheshire",
+    2
+   ],
+   [
+    "Blue River",
+    1
+   ],
+   [
+    "Vida",
+    1
+   ]
+  ],
+  "total": 115,
+  "cats": [
+   [
+    "Other / unclear",
+    70
+   ],
+   [
+    "Tech & media",
+    7
+   ],
+   [
+    "Real estate & property",
+    7
+   ],
+   [
+    "Home & yard services",
+    7
+   ],
+   [
+    "Consulting & professional",
+    6
+   ],
+   [
+    "Construction & trades",
+    5
+   ],
+   [
+    "Health care",
+    4
+   ],
+   [
+    "Retail & goods",
+    3
+   ],
+   [
+    "Auto & transport",
+    2
+   ],
+   [
+    "Nonprofit, church & community",
+    2
+   ],
+   [
+    "Beauty & wellness",
+    1
+   ],
+   [
+    "Food & drink",
+    1
+   ]
+  ],
+  "flags": {
+   "out_of_state": 0,
+   "agent_address_as_main": 0,
+   "holding_like": 6,
+   "storefront_likely": 0
+  },
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    74
+   ],
+   [
+    "Assumed Business Name",
+    32
+   ],
+   [
+    "Domestic Business Corporation",
+    3
+   ],
+   [
+    "Domestic Professional Corporation",
+    3
+   ],
+   [
+    "Foreign Business Corporation",
+    1
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    1
+   ]
+  ],
+  "sample": [
+   {
+    "name": "DOROUGH INSURANCE AND FINANCIAL SERVICES INC.",
+    "cat": "Consulting & professional"
+   },
+   {
+    "name": "CHOPPAS CONTRACTING LLC",
+    "cat": "Construction & trades"
+   },
+   {
+    "name": "LOTUS LASER STUDIO LLC",
+    "cat": "Tech & media"
+   },
+   {
+    "name": "POOF IT HAULING SERVICES LLC",
+    "cat": "Home & yard services"
+   },
+   {
+    "name": "SOLID CRAFT HOME CARE LLC",
+    "cat": "Health care"
+   }
+  ]
+ },
+ "oregon": {
+  "or_address": 1508,
+  "total": 1738,
+  "cats": [
+   [
+    "Other / unclear",
+    907
+   ],
+   [
+    "Consulting & professional",
+    193
+   ],
+   [
+    "Real estate & property",
+    95
+   ],
+   [
+    "Tech & media",
+    94
+   ],
+   [
+    "Construction & trades",
+    87
+   ],
+   [
+    "Health care",
+    72
+   ],
+   [
+    "Beauty & wellness",
+    54
+   ],
+   [
+    "Auto & transport",
+    54
+   ],
+   [
+    "Retail & goods",
+    53
+   ],
+   [
+    "Nonprofit, church & community",
+    50
+   ],
+   [
+    "Home & yard services",
+    46
+   ],
+   [
+    "Food & drink",
+    24
+   ],
+   [
+    "Education & childcare",
+    9
+   ]
+  ],
+  "flags": {
+   "out_of_state": 230,
+   "agent_address_as_main": 144,
+   "holding_like": 103,
+   "storefront_likely": 62
+  },
+  "types": [
+   [
+    "Domestic Limited Liability Company",
+    1054
+   ],
+   [
+    "Assumed Business Name",
+    398
+   ],
+   [
+    "Foreign Limited Liability Company",
+    109
+   ],
+   [
+    "Foreign Business Corporation",
+    75
+   ],
+   [
+    "Domestic Nonprofit Corporation",
+    44
+   ],
+   [
+    "Domestic Business Corporation",
+    40
+   ]
+  ],
+  "sample": [
+   {
+    "name": "NEW WELLSPRING SPA LLC",
+    "cat": "Beauty & wellness"
+   },
+   {
+    "name": "ALL CREATURES STORE LIMITED LIABILITY COMPANY",
+    "cat": "Retail & goods"
+   },
+   {
+    "name": "DROPLINE SHOP SERVICES LLC",
+    "cat": "Consulting & professional"
+   },
+   {
+    "name": "SMOKE GRILL CHICKEN & RIBS LLC",
+    "cat": "Food & drink"
+   },
+   {
+    "name": "RTEK AUTOMOTIVE LLC",
+    "cat": "Auto & transport"
+   }
+  ]
+ }
+}
